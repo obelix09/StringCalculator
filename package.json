@@ -1,0 +1,23 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "Test Driven Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+    "clean": "rm -r node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obelix09/StringCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obelix09/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/obelix09/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
