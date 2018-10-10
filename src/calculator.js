@@ -1,6 +1,8 @@
 
-function calculator(name) {
-	return "Hello, " + name;
+function add(number) {
+	if (number == "") {
+		return 0;
+	}
 }
 
-module.exports = calculator;
+module.exports = add;
