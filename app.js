@@ -1,3 +1,3 @@
 const calculator = require('./src/calculator');
 
-console.log(calculator('Bob'));
+console.log(calculator('//T1T2T3T4\nT5'));
