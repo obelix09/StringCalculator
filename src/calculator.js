@@ -15,7 +15,9 @@ function add(number) {
 			isNegative = true;
 			negatives += numArr[i].toString() + ",";
 		}
-		sum += parseInt(numArr[i])
+		if (num <= 1000) {
+			sum += parseInt(numArr[i])
+		}
 	}
 	if (isNegative) {
 		return negatives.slice(0, -1);

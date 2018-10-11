@@ -31,3 +31,11 @@ it("should return an exception: Negatives not allowed: list of negatives", () =>
 it("should return an exception: Negatives not allowed: list of negatives", () => {
 	expect(calculator("2,-4,3,-5")).toBe("Negatives not allowed: -4,-5");
 });
+
+it("should return a sum of numbers, and ignore numbers bigger than 1000", () => {
+	expect(calculator("1001,2")).toBe(2);
+});
+
+it("should return a sum of numbers, and ignore numbers bigger than 1000", () => {
+	expect(calculator("1000,2")).toBe(1002);
+});
