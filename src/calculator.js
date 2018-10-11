@@ -3,13 +3,13 @@ function add(number) {
 	if (number == "") {
 		return 0;
 	}
-	if (number.includes(",")) {
-		var numArr = number.split(",");
-		return parseInt(numArr[0]) + parseInt(numArr[1]);
-	}
 
-	var num = parseInt(number);
-	return num;
+	var sum = 0;
+	var numArr = number.split(",");
+	for (var i = 0; i < numArr.length; i++) {
+		sum += parseInt(numArr[i])
+	}
+	return sum;
 }
 
 module.exports = add;
