@@ -19,3 +19,11 @@ it("should return sum of 8 numbers", () => {
 it("should return sum of 16 numbers", () => {
 	expect(calculator("0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1")).toBe(8);
 });
+
+it("should return sum of numbers, even though there is newline", () => {
+	expect(calculator("1,\n2\n,\n3\n,4\n")).toBe(10);
+});
+
+it("should return an exception: Negatives not allowed", () => {
+	expect(calculator("-1,2")).toBe("Negatives not allowed");
+});
