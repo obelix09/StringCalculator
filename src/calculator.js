@@ -4,8 +4,13 @@ function add(number) {
 		return 0;
 	}
 
+	var delimiter = ",";
+	if (number.startsWith("//")) {
+		delimiter = number[2];
+	}
+
 	var sum = 0;
-	var numArr = number.split(",");
+	var numArr = number.split(delimiter);
 	var isNegative = false;
 	var negatives = "Negatives not allowed: ";
 

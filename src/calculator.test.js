@@ -39,3 +39,7 @@ it("should return a sum of numbers, and ignore numbers bigger than 1000", () => 
 it("should return a sum of numbers, and ignore numbers bigger than 1000", () => {
 	expect(calculator("1000,2")).toBe(1002);
 });
+
+it("should handle a different delimiter", () => {
+	expect(calculator("//;\n1;2")).toBe(3);
+});
