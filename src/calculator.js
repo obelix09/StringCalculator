@@ -6,20 +6,22 @@ function add(number) {
 
 	var sum = 0;
 	var numArr = number.split(",");
+	var isNegative = false;
+	var negatives = "Negatives not allowed: ";
 
-	try {
-		for (var i = 0; i < numArr.length; i++) {
-			var num = parseInt(numArr[i]);
-			if (num < 0) {
-				throw "Negatives not allowed";
-			}
-			sum += parseInt(numArr[i])
+	for (var i = 0; i < numArr.length; i++) {
+		var num = parseInt(numArr[i]);
+		if (num < 0) {
+			isNegative = true;
+			negatives += numArr[i].toString() + ",";
 		}
-		return sum;
+		sum += parseInt(numArr[i])
 	}
-	catch(e) {
-		return e;
+	if (isNegative) {
+		return negatives.slice(0, -1);
+
 	}
+	return sum;
 }
 
 module.exports = add;
